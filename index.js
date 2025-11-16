@@ -97,8 +97,7 @@ function getItemsByCategory(items, category) {
  */
 function countItems(items) {
   const totalQuantity = items.reduce((acc, item) => {
-    const total = item.quantity;
-    acc += total;
+    acc += item.quantity;
     return acc;
   }, 0);
   return totalQuantity;
@@ -110,8 +109,7 @@ function countItems(items) {
  */
 function getTotalPrice(items) {
   const totalPrice = items.reduce((acc, item) => {
-    const total = item.price;
-    acc += total;
+    acc += item.price;
     return acc;
   }, 0);
   return totalPrice;
